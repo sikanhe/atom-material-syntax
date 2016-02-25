@@ -56,7 +56,7 @@ atom-text-editor.is-focused .line.cursor-line,
     background-color: rgba(0, 0, 0, 0.19);
 }
 .variable.parameter.function {
-    color: rgba(238, 255, 255, 1);
+    color: @white;
 }
 .comment,
 .punctuation.definition.comment,
@@ -77,19 +77,23 @@ atom-text-editor.is-focused .line.cursor-line,
 .punctuation.definition.parameters,
 .punctuation.definition.string,
 .punctuation.definition.array {
-    color: #d9f5dd;
+    color: @white;
 }
 .none {
     color: rgba(153, 184, 157, 1);
 }
 .keyword.operator {
-    color: rgba(199, 146, 234, 1);
+    color: @white;
+}
+
+.source.elixir .keyword.operator {
+  color: rgb(68, 204, 255);
 }
 .keyword {
     color: rgba(199, 146, 234, 1);
 }
 .variable {
-    color: #B2CCD6;
+    color: @white;
 }
 .entity.name.function,
 .meta.require,
@@ -109,7 +113,7 @@ atom-text-editor.is-focused .line.cursor-line,
     color: #ffcb6b;
 }
 .meta.class {
-    color: #B2CCD6;
+    color: @white;
 }
 .keyword.other.special-method {
     color: #82B1FF;
@@ -118,7 +122,6 @@ atom-text-editor.is-focused .line.cursor-line,
     color: rgba(199, 146, 234, 1);
 }
 .support.function,
-.keyword.operator,
 .constant.other.color,
 .meta.tag,
 .punctuation.definition.tag,
@@ -131,7 +134,7 @@ atom-text-editor.is-focused .line.cursor-line,
 .text.html.markdown .meta.paragraph .meta.link.inline .punctuation.definition.string.begin.markdown,
 .text.html.markdown .meta.paragraph .meta.link.inline .punctuation.definition.string.end.markdown,
 .source.gulpfile.js .variable.other.object.js {
-    color: #89DDFF;
+    color: @white;
 }
 .string,
 .constant.other.symbol,
@@ -360,7 +363,11 @@ atom-text-editor.is-focused .line.cursor-line,
     color: #82AAFF;
 }
 .source.elixir .entity.name.function {
-    color: #ffcb6b;
+    color: #82AAFF;
+}
+
+.source.elixir .other.special-method {
+   color: @purple;
 }
 .source.elixir .constant.other.symbol.elixir,
 .source.ruby .constant.other.symbol {

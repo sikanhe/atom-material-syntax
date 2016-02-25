@@ -1,15 +1,18 @@
 // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
 
+@white: #cfc9c9;
+@purple: rgba(199, 146, 234, 1);
+
 @syntax-cursor-line: hsla(220, 100%,  80%, .04); // needs to be semi-transparent to show serach results
 @syntax-bracket-matcher-background-color: lighten(@syntax-background-color, 8%);
 
 // General colors
-@syntax-text-color: #AABBC3;
-@syntax-cursor-color: #009688;
+@syntax-text-color: @white;
+@syntax-cursor-color: #cfcfcf;
 @syntax-selection-color: darken(@syntax-text-color, 58%);
-@syntax-background-color: #263238;
-@syntax-comment-color: #49656f;
+@syntax-background-color: #1c1c1c;
+@syntax-comment-color: #707070;
 
 // Guide colors
 @syntax-wrap-guide-color: lighten(@syntax-background-color, 2.5%);
